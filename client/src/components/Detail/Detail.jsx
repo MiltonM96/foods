@@ -13,12 +13,15 @@ function Detail(props) {
 
   useEffect(() => {
     dispatch(getDetail(props.match.params.detailId));
+    return () => {
+      dispatch(cleanDetail(props.match.params.detailId));
+    }
   }, [dispatch]);
 
   function handleClean(event){
     event.preventDefault();
     dispatch(cleanDetail(event.target.value));
-    // window.location = '/home';
+    window.location = '/home';
   }
 
   async function handleDelete(event){
@@ -33,15 +36,12 @@ function Detail(props) {
   
   return (
     <div className={Styles.container}>
-      <Link to={'-1'}>
-        <button className={Styles.buttonVolver} value="button" onClick={(e) => {handleClean(e)}}>Volver</button>
+      <Link to={'/home'}>
+        <button className={Styles.buttonVolver} value="button">Volver</button>
       </Link>
       {
         myRecipe.length ?
         <div>
-          <Link to='/home'>
-            <button className={Styles.buttonEliminar} value="button" onClick={(e) => {handleDelete(e)}}>Eliminar receta</button>
-          </Link>
           <h1 className={Styles.name}>{myRecipe[0].name}</h1>
           <img className={Styles.image} src={myRecipe[0].image} alt="" width="300" height="300"/>
           
