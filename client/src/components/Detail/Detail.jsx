@@ -33,7 +33,7 @@ function Detail(props) {
   
   return (
     <div className={Styles.container}>
-      <Link to='/home'>
+      <Link to={'/home'}>
         <button className={Styles.buttonVolver} value="button" onClick={(e) => {handleClean(e)}}>Volver</button>
       </Link>
       {
