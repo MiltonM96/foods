@@ -125,7 +125,8 @@ const Home = () => {
             <Paginate
             recipesPerPage={recipesPerPage}
             allRecipes={allRecipes.length}
-            paginate={paginate}/>
+            paginate={paginate}
+            currentPage={currentPage}/>
             <button className={Styles.buttonNext} onClick={() => handleNextClick()}>Next</button>
           </div>
           </div>

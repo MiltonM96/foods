@@ -31,3 +31,8 @@ li :hover{
     cursor: pointer;
 }
 
+.buttonMarcar{
+    background-color: gray;
+    cursor: pointer;
+}
+

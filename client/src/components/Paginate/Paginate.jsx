@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './Paginate.module.css'
 
-function Paginate({recipesPerPage, allRecipes, paginate}) {
+function Paginate({recipesPerPage, allRecipes, paginate, currentPage}) {
     const pageNumbers = [];
 
     for(let i=1; i<=Math.ceil(allRecipes/recipesPerPage); i++) {
@@ -15,8 +15,8 @@ function Paginate({recipesPerPage, allRecipes, paginate}) {
                     { pageNumbers &&
                     pageNumbers.map(number => (
                         <li className='number' key={number}>
-                            <button 
-                            className={Styles.buttonNumber}
+                            <button  
+                            className={currentPage === number ? Styles.buttonMarcar : Styles.buttonNumber}
                             onClick={() => paginate(number)}
                             >
                                 {number}
