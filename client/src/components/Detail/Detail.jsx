@@ -1,6 +1,6 @@
 import React from 'react'
-import {useEffect} from  'react';
-import {Link} from 'react-router-dom';
+import {useEffect, useNavigate} from  'react';
+import {Link, NavLink} from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 import { getDetail, cleanDetail, deleteRecipe } from '../../redux/actions/actions';
 import Styles from './Detail.module.css'
@@ -18,7 +18,7 @@ function Detail(props) {
   function handleClean(event){
     event.preventDefault();
     dispatch(cleanDetail(event.target.value));
-    window.location = '/home';
+    // window.location = '/home';
   }
 
   async function handleDelete(event){
