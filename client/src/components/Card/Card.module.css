@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cedarville+Cursive&family=Cookie&family=EB+Garamond&family=Pacifico&display=swap');
+.nameCard {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+.dietsCard {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    margin: 18px;
+    filter: blur(0px);
+}
+
+.cardContainer{
+    background-color: black;
+}
+
+.imageCard{
+    border-radius: 6px;
+    width: 84%;
+    height: 48%;
+}

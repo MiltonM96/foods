@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&display=swap');
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('https://i.pinimg.com/564x/95/61/0b/95610b290cab585642426d11eed8b39a.jpg'); */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+button{
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    /* background-color: #fff; */
+}
+
+.nav button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav button:hover {
+    color: rgb(94, 94, 94);
+}
+
+.imageTitule{
+    background-image: url('https://i.pinimg.com/originals/75/92/d3/7592d3c0381cc818fea1beab48ef5e0f.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 600px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titule {
+    font-size: 120px;
+    color:rgb(255, 255, 255);
+    font-family: 'Cookie', cursive;
+}
+
+.filtersAndPag{
+    /* background-image: url('https://img.freepik.com/fotos-premium/textura-marmol-negro-natural-papel-tapiz-azulejos-piel_24076-470.jpg?w=1380'); */
+    /* background-image: url('https://i.pinimg.com/564x/95/61/0b/95610b290cab585642426d11eed8b39a.jpg'); */
+    /* width: 100%; */
+    /* background-position: left center; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 90%;
+    /* background-color: #333; */
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #333; */
+    /* width: 100%; */
+    padding: 10px;
+}
+
+.filters :hover{
+    cursor: pointer;
+}
+
+.filters select {
+    margin: 0 1em;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    height: 30px;
+}
+
+.paginate {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.buttonPrev, .buttonNext {
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+.buttonPrev:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 30px #ffffff;
+}
+.buttonNext:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 30px #ffffff;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    
+}
+
+.card div {
+    background-image: url('https://i.pinimg.com/564x/c2/2b/a1/c22ba16ebbd89f1c651f469bf83c11a1.jpg');
+    margin: 1em;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    height: 450px;
+}
+.card div:hover {
+    transform: scale(1.0) translate(-1%, -1%);
+    transition-delay: 30ms;
+    box-shadow: 0 0 15px #ffffff;
+}
+
+.card{
+    width: 450px;
+    text-decoration: none;
+}
+
+@media (max-width: 1350px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+@media only screen and (max-width: 900px) {
+    .nav {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .imageTitule{
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters select {
+        margin: 1em 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards div {
+        margin: 1em 0;
+    }
+}
+  
+  

@@ -1,0 +1,11 @@
+export const GET_RECIPES = 'GET_RECIPES';
+export const FILTER_BY_DIET = 'FILTER_BY_DIET';
+export const ORDER_BY_NAME = 'ORDER_BY_NAME';
+export const ORDER_BY_SCORE = 'ORDER_BY_SCORE';
+export const GET_NAME_RECIPES = 'GET_NAME_RECIPES';
+export const GET_DIETS = 'GET_DIETS';
+export const POST_RECIPE = 'POST_RECIPE';
+export const DELETE_RECIPE = 'DELETE_RECIPE';
+export const GET_DETAILS = 'GET_DETAILS';
+export const CLEAN_DETAIL = 'CLEAN_DETAIL';
+export const FILTER_CREATED = 'FILTER_CREATED';

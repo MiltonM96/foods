@@ -1,0 +1,33 @@
+/* .paginated{
+    background-color: black;
+} */
+
+ul{
+    /* background-color: rgb(30, 29, 29); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+li{
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    /* width: 30px; */
+    cursor: pointer;
+}
+
+li :hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 30px #ffffff;
+}
+
+.buttonNumber{
+    background-color: white;
+    cursor: pointer;
+}
+

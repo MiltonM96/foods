@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cedarville+Cursive&family=Cookie&family=EB+Garamond&family=Pacifico&display=swap');
+.containerForm .form{
+  color: white;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.creaTuReceta{
+  margin-top:0px;
+  margin-bottom: 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  margin-left: 45px;
+}
+
+input{
+  border-radius: 6px;
+  width: 99%;
+}
+
+.buttonAndTitle button{
+  /* display: flex; */
+  
+  background-color: black;
+  color: white;
+  margin: 9px;
+  height: 30px;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 3px;
+}
+
+.buttonAndTitle button:hover{
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+.form{
+  /* background-color: green; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  float: left;
+  width: 51%;
+}
+
+.nameForm, .summaryForm, .healthForm, .stepsForm, .imageForm, .divTodoDiets, .mostrarDiets{
+  margin-left: 45px;
+  margin-bottom: 20px;
+  /* background-color: black; */
+  background-image: url('https://i.pinimg.com/564x/55/4e/9a/554e9a82c4ae1fa9b8083e4091fbba73.jpg');
+  border: 3px solid white;
+  border-radius: 9px;
+  font-family: 'Abel', sans-serif;
+    font-size: 18px;
+  
+}
+
+
+.stepsForm{
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepForm button{
+ 
+  background-color: white;
+  color: black;
+  margin: 9px;
+  height: 30px;
+  cursor: pointer;
+  
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+.stepForm button:hover{
+  
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
+
+.stepsForm textarea{
+  height: 100px;
+  max-height: 100px;
+  width: 600px;
+  border-radius: 6px;
+  max-width: 600px;
+}
+
+
+
+.dietsLabel{
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+
+.dietsForm{
+  display: flex;
+  /* background-color: green; */
+  /* border-top: 0px; */
+  margin-bottom: 6px;
+}
+
+.mostrarDiets{
+  background-color: black;
+  margin-top: 0px;
+  display: flex;
+}
+.mostrarDiets ul{
+  margin: 0px;
+  padding: 0px;
+  /* background-color: white; */
+}
+.cadaDieta{
+  /* background-color:red; */
+  border: 3px solid white;
+  margin: 10px;
+  padding: 0px;
+}
+.mostrarSteps{
+  background-image: url('https://i.pinimg.com/564x/55/4e/9a/554e9a82c4ae1fa9b8083e4091fbba73.jpg');
+  /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover;
+  border: 3px solid white;
+  border-radius: 9px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 45%;
+  /* position: relative; */
+  margin-right: 45px;
+  margin-top: 111px;
+  font-size: 24px;
+  /* max-width: 100%; */
+  /* align-items: center; */
+  /* background-color: white; */
+}
+
+.mostrarSteps .mostrarStep{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.mostrarStep{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteStepButton{
+  color:black;
+  background-color:white;
+  margin-right: 12px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.deleteStepButton :hover{
+  color:white;
+  background-color:black;
+}
+
+.buttonSubmitForm{
+  background-color: black;
+  color: white;
+  margin: 9px;
+  height: 30px;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 3px;
+  margin-left: 45px;
+}
+.buttonSubmitForm :hover{
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+
+.warning {
+  border: solid red 1.8px;
+  border-radius: 0.2em;
+}
+  
+.danger {
+  font-weight: bold;
+  font-size: 6px solid;
+  color: red;
+  /* border: solid red 1.8px; */
+  margin: 3px;
+}
+  
