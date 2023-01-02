@@ -57,7 +57,7 @@ function Detail(props) {
           </div>
 
           {/* <h5 className={Styles.diets}>{myRecipe[0].createdInDb ? myRecipe[0].diets?.map(d=>d.name + (', ')) : myRecipe[0].diets?.map((d) => d + (' '))}</h5> */}
-          <h3>Summary: </h3><p className={Styles.summary}>{myRecipe[0].summary}</p>
+          <h3>Summary: </h3><p dangerouslySetInnerHTML={{ __html: myRecipe[0].summary }} className={Styles.summary}/>
           {myRecipe[0].steps ? 
           <div className={Styles.steps}>
             <h3>Steps:</h3>
