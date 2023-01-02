@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { API_URL } from '../../config';
 import { GET_RECIPES, FILTER_BY_DIET, ORDER_BY_NAME, ORDER_BY_SCORE, FILTER_CREATED, GET_NAME_RECIPES, GET_DIETS, GET_DETAILS, CLEAN_DETAIL } from './TypesActions';
 
 export function getRecipes(){
     return async function(dispatch) {
-        var json = await axios.get('http://localhost:3001/recipes',{
+        var json = await axios.get(`${API_URL}/recipes`,{
             // headers: { Accept: "application/json", "Accept-Encoding": "identity" },
             // params: { trophies: true },
         }); 
@@ -17,7 +18,7 @@ export function getRecipes(){
 export function getNameRecipes(name){
     return async function(dispatch) {
         try {
-            var json = await axios.get('http://localhost:3001/recipes?name=' + name);
+            var json = await axios.get(`${API_URL}/recipes?name=` + name);
             return dispatch({
                 type: GET_NAME_RECIPES,
                 payload: json.data
@@ -30,7 +31,7 @@ export function getNameRecipes(name){
 
 export function getDiets(){
     return async function (dispatch){
-        var json = await axios.get('http://localhost:3001/diets', {
+        var json = await axios.get(`${API_URL}/diets`, {
 
         });
         return dispatch({
@@ -43,7 +44,7 @@ export function getDiets(){
 export function postRecipe(payload){
     return async function (dispatch) {
         try {
-            const response = await axios.post('http://localhost:3001/recipes', payload);
+            const response = await axios.post(`${API_URL}/recipes`, payload);
             // console.log(response.status);
             return response;
         } catch (error) {
@@ -57,7 +58,7 @@ export function postRecipe(payload){
 export function deleteRecipe(payload) {
     return async function (dispatch) {
         try {
-            const response = await axios.delete('http://localhost:3001/recipes', payload);
+            const response = await axios.delete(`${API_URL}/recipes`, payload);
             return response;
         } catch (error) {
             return error;
@@ -96,7 +97,7 @@ export function filterCreated(payload){
 export function getDetail(id){
     return async function (dispatch) {
         try {
-            var json = await axios.get('http://localhost:3001/recipes/' + id);
+            var json = await axios.get(`${API_URL}/recipes/` + id);
             return dispatch({
                 type: GET_DETAILS,
                 payload: json.data
