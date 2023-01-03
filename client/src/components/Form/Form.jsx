@@ -21,6 +21,13 @@ function validate(form){
   } if(!form.image){
     errors.image = 'Se requiere imagen';
   }
+  if (
+    !/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?.*(png|jpg|jpeg|gif)$/.test(
+      form.image
+    )
+  ) {
+    errors.image = "Url de imagen inválida";
+  }
   
   return errors;
 }
